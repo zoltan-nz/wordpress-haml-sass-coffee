@@ -1,9 +1,15 @@
-/* line 1, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+/* GLOBAL STYLES
+ *  -------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+/* line 5, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
 body {
   padding-bottom: 40px;
   color: #5a5a5a; }
 
-/* line 5, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+/* CUSTOMIZE THE NAVBAR
+ *-------------------------------------------------- */
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+/* line 14, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -11,4 +17,196 @@ body {
   right: 0;
   z-index: 10;
   margin-top: 20px;
-  margin-bottom: -90px; }
+  margin-bottom: -90px;
+  /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */ }
+
+/* Remove border and change up box shadow for more contrast */
+/* line 28, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.navbar .navbar-inner {
+  border: 0;
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25); }
+/* line 33, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.navbar .brand {
+  padding: 14px 20px 16px;
+  /* Increase vertical padding to match navbar links */
+  font-size: 16px;
+  font-weight: bold;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5); }
+/* line 39, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.navbar .nav > li > a {
+  padding: 15px 20px; }
+/* line 41, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.navbar .btn-navbar {
+  margin-top: 10px; }
+
+/* Downsize the brand/project name a bit */
+/* Navbar links: increase padding for taller navbar */
+/* Offset the responsive button for proper vertical alignment */
+/* CUSTOMIZE THE CAROUSEL
+ *-------------------------------------------------- */
+/* Carousel base class */
+/* line 55, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.carousel {
+  margin-bottom: 60px; }
+  /* line 57, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel .container {
+    position: relative;
+    z-index: 9; }
+
+/* line 61, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.carousel-control {
+  height: 80px;
+  margin-top: 0;
+  font-size: 120px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  background-color: transparent;
+  border: 0;
+  z-index: 10; }
+
+/* line 71, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.carousel .item {
+  height: 500px; }
+/* line 73, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px; }
+
+/* line 80, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.carousel-caption {
+  background-color: transparent;
+  position: static;
+  max-width: 550px;
+  padding: 0 20px;
+  margin-top: 200px; }
+  /* line 86, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel-caption h1, .carousel-caption .lead {
+    margin: 0;
+    line-height: 1.25;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4); }
+  /* line 91, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel-caption .btn {
+    margin-top: 10px; }
+
+/* MARKETING CONTENT
+ *-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+/* line 100, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.marketing .span4 {
+  text-align: center; }
+/* line 102, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.marketing h2 {
+  font-weight: normal; }
+/* line 104, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.marketing .span4 p {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* Featurettes
+ *------------------------- */
+/* line 111, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.featurette-divider {
+  margin: 80px 0; }
+
+/* Space out the Bootstrap <hr> more */
+/* line 115, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.featurette {
+  padding-top: 120px;
+  /* Vertically center images part 1: add padding above and below text. */
+  overflow: hidden; }
+
+/* Vertically center images part 2: clear their floats. */
+/* line 121, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.featurette-image {
+  margin-top: -120px;
+  /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */ }
+  /* line 124, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette-image.pull-left {
+    margin-right: 40px; }
+  /* line 126, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette-image.pull-right {
+    margin-left: 40px; }
+
+/* Give some space on the sides of the floated elements so text doesn't run right into it. */
+/* Thin out the marketing headings */
+/* line 133, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px; }
+
+/* RESPONSIVE CSS
+ *-------------------------------------------------- */
+@media (max-width: 979px) {
+  /* line 143, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .container.navbar-wrapper {
+    margin-bottom: 0;
+    width: auto; }
+
+  /* line 146, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .navbar-inner {
+    border-radius: 0;
+    margin: -20px 0; }
+
+  /* line 150, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel .item {
+    height: 500px; }
+  /* line 152, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel img {
+    width: auto;
+    height: 500px; }
+
+  /* line 155, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette {
+    height: auto;
+    padding: 0; }
+
+  /* line 159, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette-image.pull-left, .featurette-image.pull-right {
+    display: block;
+    float: none;
+    max-width: 40%;
+    margin: 0 auto 20px; } }
+@media (max-width: 767px) {
+  /* line 166, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .navbar-inner {
+    margin: -20px; }
+
+  /* line 168, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel {
+    margin-left: -20px;
+    margin-right: -20px; }
+    /* line 172, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+    .carousel .container! .item, .carousel .container! img {
+      height: 300px; }
+
+  /* line 174, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .carousel-caption {
+    width: 65%;
+    padding: 0 70px;
+    margin-top: 100px; }
+    /* line 178, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+    .carousel-caption h1 {
+      font-size: 30px; }
+    /* line 180, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+    .carousel-caption .lead, .carousel-caption .btn {
+      font-size: 18px; }
+
+  /* line 182, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .marketing .span4 + .span4 {
+    margin-top: 40px; }
+
+  /* line 184, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette-heading {
+    font-size: 30px; }
+
+  /* line 186, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+  .featurette .lead {
+    font-size: 18px;
+    line-height: 1.5; } }
