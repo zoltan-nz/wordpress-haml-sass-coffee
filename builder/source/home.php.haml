@@ -1,5 +1,28 @@
 <?php get_header(); ?>
+#myCarousel.carousel.slide
+  .carousel-inner
+    .item{style: 'background-color:gray'}
+      %img{src: ''}
+      .container
+        .carousel-caption
+          %h1 Example headline 1
+          %p.lead
+            Longer text
+          %a.btn.btn-large.btn-danger{href: '#'} Sign up today
+    .item{style: 'background-color:gray'}
+      %img{src: ''}
+      .container
+        .carousel-caption
+          %h1 Example headline 2
+          %p.lead
+            Longer text
+          %a.btn.btn-large.btn-danger{href: '#'} Sign up today
+    %a.left.carousel-control{href: '#myCarousel', data: {slide: 'pref'}} ‹
+    %a.right.carousel-control{href: '#myCarousel', data: {slide: 'next'}} ›
 <?php get_footer(); ?>
-:coffee
-  $->
-    $('#myCarousel').carousel()
+:javascript
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
