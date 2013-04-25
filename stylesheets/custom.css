@@ -1,0 +1,14 @@
+/* line 1, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a; }
+
+/* line 5, /var/www/keocko/wp-content/themes/keocko/builder/source/stylesheets/custom.sass */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px; }
